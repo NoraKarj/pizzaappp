@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">PizzaApp</string>
+    <string name="order_pizza">Order Pizza</string>
+
+
+    <string name="choose_flavor">Choose Extra Flavor</string>
+    <string name="choose_dip">Choose Dip</string>
+    <string name="no_extra">No extra</string>
+    <string name="vege_cheese">Vege Cheese</string>
+    <string name="onion">Onion</string>
+    <string name="chicken">Chicken</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="kebab">Kebab</string>
+    <string name="salad">Salad</string>
+    <string name="special_flavor">Special Flavor</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="choose_pickup_date">Choose Pickup Date</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="send">Send Order to Another App</string>
+    <string name="flavor">Flavor</string>
+
+    <string name="pickup_date">Pickup date</string>
+    <string name="subtotal_price">Subtotal %s</string>
+    <string name="total_price">Total %s</string>
+    <string name="new_pizza_order">New Pizza Order</string>
+    <string name="order_details">Flavor: %2$s \nPickup date: %3$s \nTotal: %4$s \n\nThank you!</string>
+    <string name="back_button">Back</string>
+
+    <string name="dip">Dip</string>
+    <string name="no_dip">No dip</string>
+    <string name="garlic">Garlic</string>
+    <string name="ranch">Ranch</string>
+    <string name="chili">Chili</string>
+    <string name="vege">Vege</string>
+    <string name="curry">Curry</string>
+    
+    <plurals name="pizzas">
+        <item quantity="one">%d pizza</item>
+        <item quantity="other">%d pizzas</item>
+    </plurals>
+</resources>
