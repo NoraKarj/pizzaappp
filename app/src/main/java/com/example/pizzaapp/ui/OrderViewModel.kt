@@ -11,8 +11,7 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
-
-private const val PRICE_PER_PIZZA = 14.00
+private const val PRICE_PER_PIZZA = 18.00
 
 private const val PRICE_FOR_SAME_DAY_PICKUP = 3.00
 

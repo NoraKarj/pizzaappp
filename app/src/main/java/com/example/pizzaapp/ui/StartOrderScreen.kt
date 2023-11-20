@@ -50,7 +50,7 @@ fun StartOrderScreen(
             textAlign = TextAlign.Center,
             color = Color(0xFF36846b),
             modifier = Modifier
-                .padding(top = 8.dp, bottom = 15.dp)
+                .padding(top = 6.dp, bottom = 6.dp)
                 .fillMaxWidth()
         )
         LazyColumn(
@@ -105,6 +105,31 @@ fun StartOrderScreen(
                     )
                 }
             }
+            item {
+                Spacer(modifier = Modifier.height(20.dp))
+            }
+            item {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    PizzaItem(
+                        R.drawable.pizza5,
+                        "Grill Gourmet",
+                        "Enjoy a delicious pizza that combines grilled meat, onions, cherry tomatoes, mozzarella cheese, and gouda cheese. An unforgettable experience.",
+                        onNextButtonClicked,
+                        Modifier.weight(1f)
+                    )
+                    PizzaItem(
+                        R.drawable.pizza6,
+                        "Four Season",
+                        "The fresh mushroom pizza is a perfect choice for those who love fresh flavors. Mushrooms, ham, and cheese come together in this delicious pizza.",
+                        onNextButtonClicked,
+                        Modifier.weight(1f)
+                    )
+                }
+            }
         }
     }
 }
@@ -141,24 +166,24 @@ fun PizzaItem(
             contentDescription = null,
             modifier = Modifier
                 .width(125.dp)
-                .height(125.dp) // Aseta kuvan kiinteä koko
+                .height(125.dp)
                 .wrapContentWidth(Alignment.CenterHorizontally)
                 .wrapContentHeight(Alignment.CenterVertically)
         )
-        Spacer(modifier = Modifier.height(4.dp)) // Kokeile eri korkeuksia
+        Spacer(modifier = Modifier.height(4.dp))
         Text(
             text = name,
             style = MaterialTheme.typography.headlineSmall,
-            color = Color(0xFF36846b), // Lisätty väri
+            color = Color(0xFF36846b),
             modifier = Modifier
                 .fillMaxWidth()
                 .wrapContentWidth(Alignment.CenterHorizontally)
         )
-        Spacer(modifier = Modifier.height(8.dp)) // Kokeile eri korkeuksia
+        Spacer(modifier = Modifier.height(8.dp))
         Text(
             text = description,
             style = MaterialTheme.typography.labelMedium,
-            textAlign = TextAlign.Center, // Lisätty textAlign
+            textAlign = TextAlign.Center,
             modifier = Modifier
                 .fillMaxWidth()
                 .wrapContentWidth(Alignment.CenterHorizontally)

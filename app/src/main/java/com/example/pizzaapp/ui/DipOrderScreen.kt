@@ -24,14 +24,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-
 import com.example.pizzaapp.R
-
-
 import com.example.pizzaapp.ui.components.FormattedPriceLabel
-
-
-
 
 @Composable
 fun DipOrderScreen(
@@ -45,7 +39,6 @@ fun DipOrderScreen(
     modifier: Modifier = Modifier
 ){
     var selectedValue by rememberSaveable { mutableStateOf("") }
-
 
     Column(
         modifier = modifier,
@@ -72,7 +65,6 @@ fun DipOrderScreen(
                         }
                     )
                     Text(item)
-
 
                 }
             }
@@ -111,7 +103,6 @@ fun DipOrderScreen(
             }
         }
     }
-
 }
 
 @Preview
@@ -120,8 +111,6 @@ fun DipOrderPreview() {
     DipOrderScreen(
         subtotal = "299.99",
         options2 = listOf("Option 1", "Option 2", "Option 3", "Option 4", "Option 5"),
-
         modifier = Modifier.fillMaxHeight(),
-
         )
 }

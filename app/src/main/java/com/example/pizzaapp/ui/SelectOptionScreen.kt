@@ -3,11 +3,9 @@ package com.example.pizzaapp.ui
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.Button
 import androidx.compose.material3.Divider
@@ -24,14 +22,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-
 import com.example.pizzaapp.R
-
-
 import com.example.pizzaapp.ui.components.FormattedPriceLabel
-
-
-
 
 @Composable
 fun SelectOptionScreen(
@@ -45,7 +37,6 @@ fun SelectOptionScreen(
     modifier: Modifier = Modifier
 ){
     var selectedValue by rememberSaveable { mutableStateOf("") }
-
 
     Column(
         modifier = modifier,
@@ -72,7 +63,6 @@ fun SelectOptionScreen(
                         }
                     )
                     Text(item)
-
 
                 }
             }
@@ -111,7 +101,6 @@ fun SelectOptionScreen(
             }
         }
     }
-
 }
 
 @Preview

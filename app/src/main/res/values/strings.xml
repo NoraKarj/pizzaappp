@@ -18,7 +18,7 @@
     <string name="choose_pickup_date">Choose Pickup Date</string>
     <string name="order_summary">Order Summary</string>
     <string name="send">Send Order to Another App</string>
-    <string name="flavor">Flavor</string>
+    <string name="flavor"> Extra Flavor</string>
 
     <string name="pickup_date">Pickup date</string>
     <string name="subtotal_price">Subtotal %s</string>
